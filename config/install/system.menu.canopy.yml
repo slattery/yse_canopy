@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: canopy
+label: Canopy
+description: 'Dymanic menu for YSE Canopy'
+locked: false

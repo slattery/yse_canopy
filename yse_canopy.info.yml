@@ -1,0 +1,8 @@
+name: YSE Canopy
+type: module
+description: Canopy
+dependencies:
+  - yse_menu_plugins:yse_menu_plugins
+core_version_requirement: '^9 || ^10'
+package: YSE WebOps
+

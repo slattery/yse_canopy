@@ -1,0 +1,94 @@
+yse_canopy.main:
+  weight: 1
+  menu_name: canopy
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/{pub_year}'
+    _link: 'yse_canopy.main'
+    _name: 'Canopy'
+    _options:
+      parameters:
+        pub_year:
+          uri_segment: 2
+yse_canopy.news_briefs:
+  weight: 2
+  menu_name: canopy
+  parent: yse_canopy.main
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/{pub_year}'
+    _link: 'yse_canopy.news_briefs'
+    _name: 'News Briefs'
+    _options:
+      parameters:
+        pub_year:
+          uri_segment: 2
+  options:
+    fragment: 'news-briefs'
+yse_canopy.stories:
+  weight: 3
+  menu_name: canopy
+  parent: yse_canopy.main
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/{pub_year}'
+    _link: 'yse_canopy.stories'
+    _name: 'Stories'
+    _options:
+      parameters:
+        pub_year:
+          uri_segment: 2
+  options:
+    fragment: 'stories'
+yse_canopy.bookshelf:
+  weight: 4
+  menu_name: canopy
+  parent: yse_canopy.main
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/{pub_year}/bookshelf'
+    _link: 'yse_canopy.bookshelf'
+    _name: 'Bookshelf'
+    _options:
+      parameters:
+        pub_year:
+          uri_segment: 2
+yse_canopy.class_notes:
+  weight: 5
+  menu_name: canopy
+  parent: yse_canopy.main
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/{pub_year}/class-notes'
+    _link: 'yse_canopy.class_notes'
+    _name: 'Class Notes'
+    _options:
+      parameters:
+        pub_year:
+          uri_segment: 2
+yse_canopy.memoriam:
+  weight: 6
+  menu_name: canopy
+  parent: yse_canopy.main
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/{pub_year}/memoriam'
+    _link: 'yse_canopy.memoriam'
+    _name: 'In Memoriam'
+    _options:
+      parameters:
+        pub_year:
+          uri_segment: 2
+yse_canopy.past_issues:
+  weight: 7
+  menu_name: canopy
+  parent: yse_canopy.main
+  class: Drupal\yse_menu_plugins\Plugin\Menu\AliasLookupMenuLink
+  route_parameters:
+    _path: '/canopy/issues'
+    _link: 'yse_canopy.past_issues'
+    _name: 'Past Issues'
+  options:
+    attributes:
+      class:
+        - btn--menu-item
