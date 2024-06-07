@@ -1,6 +1,6 @@
 name: YSE Canopy
 type: module
-description: Canopy
+description: Canopy Magazine Support
 dependencies:
   - yse_menu_plugins:yse_menu_plugins
 core_version_requirement: '^9 || ^10'
